@@ -2,6 +2,8 @@
 
 >  scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 
+## 规则
+
 1. 合法的scheme只限于http/https/ws
 2. path必须使用小写
 3. query必须是小写或者是驼峰样式（首字母小写）
