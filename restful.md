@@ -1,6 +1,6 @@
 # Restful Spec
 
->  scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 
 ## 规则
 
