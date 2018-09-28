@@ -1,2 +1,59 @@
-# Golang spec
-Code style
+# 代码规范
+
+## 注释
+
+1. copyright，每个代码文件需要以copyright开头。
+   ```
+   // Copyright 2018 The QOS Authors
+   // xxx
+   
+   ```
+2. 所有包都要写注释（包包含多个文件只写一份包注释也可以），紧挨包定义之上，要以包定义开头。
+   ```
+   // Package pkg comments for pkg xxx
+   // xxx.  
+   package pkg
+   ```
+3. 所有导出方法都要写注释，紧挨方法之上。注释要以方法名开头。
+   >// FuncName comments for FuncName.
+4. 注释都使用“//”行注释，兼容godoc。
+
+## 命名
+
+1. 命名尽量简短，包括函数名、变量名、包名。
+2. 方法变量命名必须使用驼峰命名法，不能使用下划线；包名应全小写，不适用下划线或驼峰命名, 尽量一个单词。
+3. 任何需要对外暴露的名字必须大写字母开头，不需要暴露在包外的名字必须以小写字母开头。
+4. 接口的命名，如果接口只有一个方法，则该接口命名为方法名成加上”er“后缀；两个函数的接口名综合两个函数名。
+
+
+## 编码
+
+1. 代码格式IDE一般会自动格式化，gofmt命令可以格式化代码。
+   >gofmt -w xxx.go
+   
+2. 尽量不要用分号“;”区分语句，单行不要写多行语句。
+3. 对import的包进行分组管理，而且标准库作为第一组，goimports命令可以自动格式化。
+   >goimports -w xxx.go
+
+
+## 错误处理
+
+1. 调用函数返回的错误，一定要检查，不能忽略。
+2. 函数如果有错误返回，需要单独返回错误，不要通过返回值判断错误。 return value, err
+3. 错误信息一定要用英文，末尾不需要标点符号。
+4. 错误处理格式：
+```
+    //不要使用如下方式
+    if err != nil {
+        // error handling
+    } else {
+        // normal code
+    }
+
+    //采用下面的方式
+
+    if err != nil {
+        // error handling
+        return // or continue, etc.
+    }
+```
