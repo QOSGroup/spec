@@ -1,5 +1,8 @@
 # 代码规范
 
+## go版本
+go1.11
+
 ## 注释
 
 1. copyright，每个代码文件需要以copyright开头。
