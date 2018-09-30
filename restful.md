@@ -12,7 +12,7 @@ scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 6. 响应体必须是合法的JSON
 7. POST、PUT请求方法BODY体不能为空，body同时必须是合法的JSON数据
 8. GET、DELETE必须保证是幂等性的
-8. 业务无关的功能只使用HTTP HEADER，不能使用BODY和URL参数
+9. 业务无关的功能只使用HTTP HEADER，不能使用BODY和URL参数
 
 ## 举例
 
