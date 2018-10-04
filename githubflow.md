@@ -1,4 +1,6 @@
-# GitHub Standard Fork & Pull Request Workflow
+# GitHub Workflow
+
+GitHub Standard Fork & Pull Request Workflow
 
 Reference: https://gist.github.com/Chaser324/ce0505fbed06b947d962
 
