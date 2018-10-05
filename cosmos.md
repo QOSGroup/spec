@@ -1,1 +1,3 @@
-# Using Cosmos version is 0.23 
+How to use cosmos
+
+Cosmos version is 0.22
