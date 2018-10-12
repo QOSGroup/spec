@@ -1,3 +1,5 @@
-How to use cosmos
+# cosmos
+
+## How to use cosmos
 
 Cosmos version is 0.22
