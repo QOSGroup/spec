@@ -26,4 +26,9 @@ QCP跨链中间件可以中继符合QCP协议标准的交易数据，通过适�
 
 ## 整体架构
 
+区块链浏览器访问后台服务qmoon获取数据
+qmoon同步区块链数据到后台中心化数据库，给前端提供Restful接口
+iOS和Andriod使用QOS提供的SDK跟联盟链交互，也可以直接跟公链交互
+中继协议实现联盟链和公链之间的跨链交易，也可以跟其他异构区块链联通
+
 ![双层链架构4](https://github.com/QOSGroup/static/blob/master/sdk-qmoon.png)
