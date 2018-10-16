@@ -24,6 +24,6 @@ QCP跨链中间件可以中继符合QCP协议标准的交易数据，通过适�
 
 ![cassini](https://github.com/QOSGroup/static/blob/master/cassini.jpg)
 
-整体架构
+## 整体架构
 
 ![双层链架构4](https://github.com/QOSGroup/static/blob/master/sdk-qmoon.png)
